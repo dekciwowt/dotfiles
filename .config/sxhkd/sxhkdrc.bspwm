@@ -1,0 +1,8 @@
+# quit bspwm
+super + alt + q
+	bspc quit
+
+# close or kill
+alt + {_, shift +} q
+	bspc node -{c,k} || [[ -z "$(bspc query --nodes --node any.local)" ]] && bspc desktop -f last.occupied
+

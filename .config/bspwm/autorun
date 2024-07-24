@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# create log folder
+[ -d ~/.cache/logs/autorun ] || mkdir -p ~/.cache/logs/autorun
+
+# run once
+pgrep -x sxhkd >/dev/null || sxhkd -c $(find ~/.config/sxhkd/ -type f) >~/.cache/logs/autorun/sxhkd.log 2>&1 &
+
+# kill and run
+killall picom >/dev/null
+
+# set background
+~/.config/feh/background
+
+# start picom
+picom --config ~/.config/picom/picom.conf --log-level ERROR --log-file ~/.cache/logs/autorun/picom.log &

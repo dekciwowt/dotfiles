@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# workspaces
+bspc monitor 1 2 3 4 5
+
+# border
+bspc config border_width 2
+bspc config focused_border_color "#34332f"
+bspc config normal_border_color "#34332f"
+
+# etc
+bspc config focus_follows_pointer true
+bspc config gapless_monocle true
+bspc config split_ratio .5
+bspc config window_gap 16
+
+# mouse settings
+bspc config pointer_action1 move
+bspc config pointer_action2 resize_corner
+bspc config pointer_modifier mod1
+
+# autostart
+. ~/.config/bspwm/autorun
+

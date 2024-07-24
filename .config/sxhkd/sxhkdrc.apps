@@ -1,0 +1,8 @@
+# terminal
+alt + Return
+	alacritty
+
+# drun
+alt + space
+	rofi -show drun
+

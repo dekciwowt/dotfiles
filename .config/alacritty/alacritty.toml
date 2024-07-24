@@ -1,0 +1,54 @@
+[colors.primary]
+background = "#fbf5e7"
+foreground = "#34332f"
+
+[colors.cursor]
+text = "#fbf5e7"
+cursor = "#34332f"
+
+[font]
+size = 10
+
+[font.bold]
+family = "monospace_font"
+style = "Extrabold"
+
+[font.bold_italic]
+family = "monospace_font"
+style = "Extrabold Italic"
+
+[font.italic]
+family = "monospace_font"
+style = "Italic"
+
+[font.normal]
+family = "monospace_font"
+style = "Semibold"
+
+[window]
+decorations = "None"
+dynamic_padding = true
+dynamic_title = true
+opacity = 1.0
+startup_mode = "Windowed"
+
+[window.padding]
+x = 8
+y = 8
+
+[cursor]
+blink_interval = 500
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
